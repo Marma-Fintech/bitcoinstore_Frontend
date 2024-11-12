@@ -1,0 +1,32 @@
+.custom-cursor-element {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  pointer-events: none;
+  z-index: 10000;
+}
+
+.fade-right {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-left {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(50px) scale(0.8);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.in-view {
+  opacity: 1;
+  transform: translateX(0) translateY(0) scale(1);
+}
