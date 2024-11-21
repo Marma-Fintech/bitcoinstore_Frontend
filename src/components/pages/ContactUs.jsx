@@ -29,7 +29,7 @@ export default function ContactUs() {
 
     try {
       const response = await axios.post(
-        "http://ec2-54-84-228-107.compute-1.amazonaws.com:8080/register",
+        `${import.meta.env.VITE_API_BASE_URL}/register`,
         formData
       );
 
