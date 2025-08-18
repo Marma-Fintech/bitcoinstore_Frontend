@@ -1,0 +1,295 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap");
+@font-face {
+  font-family: Fellix;
+  src: url("/assets/fonts/Fellix-Regular.ttf");
+}
+
+.title {
+  z-index: 999;
+  font-family: Fellix;
+  font-weight: 300;
+  color: rgba(255, 255, 255);
+  margin-top: 12%;
+  font-size: 24px;
+  text-align: center;
+  width: 50%;
+  justify-content: center;
+}
+
+.i {
+  font-family: Exo;
+  cursor: pointer;
+  padding: 20px;
+  font-weight: 500;
+  background: linear-gradient(#ff873c, #0e0e0e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes arrow-up {
+  0% {
+    transform: translateY(0px) translateZ(0);
+  }
+  50% {
+    transform: translateY(-7px) translateZ(0);
+  }
+  100% {
+    transform: translateY(0) translateZ(0);
+  }
+}
+
+/* Alternative animation for better iOS isolation */
+@keyframes arrow-up-ios {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(0, -7px, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* iOS-specific fixes for animation isolation */
+.scroll-button-wrapper {
+  display: inline-block;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  isolation: isolate;
+  contain: layout style paint;
+  position: relative;
+  z-index: 1;
+}
+
+.scroll-button {
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  will-change: transform;
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -webkit-will-change: transform;
+  position: relative;
+  z-index: 2;
+}
+
+/* Prevent text animation bleeding on iOS */
+.phrase {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+  position: relative;
+  z-index: 0;
+}
+
+b {
+  letter-spacing: 0.7px;
+  background: linear-gradient(#3ec6f6 100%, #0e0e0e 100%);
+  font-weight: 300;
+  font-size: 28px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+tt {
+  letter-spacing: 0.7px;
+  font-weight: 300;
+  font-size: 28px;
+  background: linear-gradient(#ff873c 100%, #0e0e0e 100%);
+  font-family: EXO;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 768px) {
+  tt,
+  b {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  tt,
+  b {
+    font-size: 22px;
+  }
+  .title {
+    font-size: 20px;
+    line-height: 1.5;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .barbeam {
+    width: 50% !important;
+  }
+
+  .goldbeam {
+    width: 50% !important;
+  }
+  .paperbeam {
+    width: 50% !important;
+  }
+
+  .coinbeam {
+    width: 50% !important;
+  }
+
+  .combeam {
+    width: 50% !important;
+  }
+
+  .prebeam {
+    width: 55% !important;
+  }
+
+  .usbeam {
+    width: 45% !important;
+  }
+  .bitbeam {
+    width: 60% !important;
+  }
+
+  /* special man  */
+
+  .barleft {
+    width: 420px !important;
+    left: -175px !important;
+    height: auto !important;
+  }
+  .barright {
+    width: 385px !important;
+    right: -170px !important;
+    height: auto !important;
+  }
+
+  .comleft {
+    width: 430px !important;
+    left: -205px !important;
+    height: auto !important;
+  }
+
+  .comright {
+    width: 380px !important;
+    right: -190px !important;
+    height: auto !important;
+  }
+
+  .conleft {
+    width: 420px !important;
+    left: -200px !important;
+    height: auto !important;
+  }
+  .conright {
+    width: 375px !important;
+    right: -200px !important;
+    height: auto !important;
+  }
+
+  .popleft {
+    width: 420px !important;
+    height: auto !important;
+    left: -180px !important;
+  }
+
+  .popright {
+    width: 380px !important;
+    height: auto !important;
+    right: -180px !important;
+  }
+  .leftman {
+    width: 310px !important;
+    left: -105px;
+    height: 30vh;
+  }
+  .rightman {
+    width: 310px !important;
+    right: -115px !important;
+    height: 30vh !important;
+  }
+  .preman {
+    width: 413px !important;
+    left: -190px !important;
+    height: auto !important;
+    /* bottom: 10px !important; */
+  }
+  .prerman {
+    width: 383px !important;
+    height: auto !important;
+    right: -200px !important;
+  }
+  .usleft {
+    width: 424px !important;
+    height: auto !important;
+    left: -200px !important;
+  }
+  .usright {
+    width: 380px !important;
+    height: auto !important;
+    right: -200px !important;
+  }
+
+  .bitleft {
+    width: 400px !important;
+    height: auto !important;
+    left: -190px !important;
+  }
+
+  .bitright {
+    width: 380px !important;
+    height: auto !important;
+    right: -150px !important;
+  }
+
+  .homeleft {
+    width: 40% !important;
+  }
+  .homeright {
+    width: 40% !important;
+  }
+
+  .goldman {
+    width: 420px !important;
+    left: -200px !important;
+  }
+  .goldrman {
+    width: 380px !important;
+    right: -200px !important;
+  }
+
+  .down {
+    width: 1200px !important;
+    height: auto !important;
+    left: -500px !important;
+  }
+
+  .downs {
+    width: 1200px !important;
+    height: auto;
+  }
+
+  .contact {
+    top: 10% !important;
+  }
+
+  .go {
+    bottom: 150px !important;
+  }
+
+  .i {
+    margin-top: 100px !important;
+    padding: 15px !important;
+  }
+  .title {
+    padding-top: 60px;
+    width: 100%;
+  }
+
+  .particle {
+    width: 100% !important;
+  }
+}

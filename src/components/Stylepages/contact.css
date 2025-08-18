@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap");
+@font-face {
+  font-family: Fellix;
+  src: url("/assets/fonts/Fellix-Regular.ttf");
+}
+
+a {
+  font-family: Fellix;
+  letter-spacing: 1px;
+}
+.go {
+  z-index: 12;
+  text-transform: uppercase;
+  font-family: Fellix;
+  position: relative;
+  top: 35px !important;
+  text-align: center;
+}
+
+form {
+  font-family: Exo;
+  letter-spacing: 1px;
+}
+.years {
+  margin: 0px;
+  padding: 0px;
+  font-size: 30px;
+  font-family: Exo;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.ok {
+  margin-top: 0px;
+  padding: 0px;
+  font-family: "Odibee Sans";
+  font-size: calc(100px - 50px);
+  text-transform: uppercase;
+  text-align: center;
+  background-image: linear-gradient(
+    179.571deg,
+    rgb(255, 135, 60) 0%,
+    rgb(13, 13, 13) 100%
+  );
+  -webkit-background-clip: text;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-fill-color: rgba(0, 0, 0, 0);
+  -webkit-text-stroke-width: 0px;
+  white-space-collapse: preserve;
+}
+
+.tails {
+  background: linear-gradient(178.41deg, #3ec6f6 18.84%, #0e0e0e 107.7%);
+  -webkit-background-clip: text;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-fill-color: rgba(0, 0, 0, 0);
+  -webkit-text-stroke-width: 0px;
+  white-space-collapse: preserve;
+  letter-spacing: 0.03em;
+  quotes: none;
+  text-align: center;
+  font-family: "Odibee Sans";
+  font-size: calc(100px - 50px);
+  text-transform: uppercase;
+}
+
+/* Responsive Styling */
+
+@media (max-width: 1024px) {
+  .years {
+    font-size: 24px;
+  }
+
+  .ok {
+    font-size: calc(80px - 40px);
+  }
+
+  .tails {
+    font-size: calc(80px - 40px);
+  }
+}
+
+@media (max-width: 768px) {
+  .years {
+    font-size: 20px;
+  }
+
+  .ok {
+    font-size: calc(60px - 30px);
+  }
+
+  .tails {
+    font-size: calc(60px - 30px);
+  }
+}
+
+@media (max-width: 480px) {
+  .years {
+    font-size: 38px;
+    padding: 5px;
+  }
+
+  .ok {
+    font-size: calc(70px - 25px);
+  }
+
+  .tails {
+    font-size: calc(70px - 25px);
+  }
+}

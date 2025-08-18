@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap");
+
+@font-face {
+  font-family: Fellix;
+  src: url("/assets/fonts/Fellix-Regular.ttf");
+}
+
+.particles {
+  font-family: Fellix;
+  white-space-collapse: preserve;
+  font-size: 15px;
+  font-weight: 300;
+  color: whitesmoke;
+  line-height: 1.4;
+  max-width: 800px;
+  letter-spacing: 0.3;
+  margin: 20px auto;
+  width: 70%;
+  display: block;
+  opacity: 1;
+}
+
+.phrase {
+  display: inline;
+  font-size: 15px;
+  line-height: 1.4;
+  opacity: 0;
+  filter: blur(6px);
+  animation: waveEffect 2s ease-out infinite,
+    fadeIn 2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    filter: blur(6px);
+    transform: translateY(6px);
+  }
+  50% {
+    opacity: 0.5;
+    filter: blur(3px);
+    transform: translateY(-3px);
+  }
+  100% {
+    opacity: 0.9;
+    filter: blur(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes waveEffect {
+  0%,
+  100% {
+    transform: translateY(5px);
+  }
+  25% {
+    transform: translateY(-5px);
+  }
+  75% {
+    transform: translateY(1px);
+  }
+}
+
+@media (max-width: 768px) {
+  .head,
+  .tail {
+    font-size: 50px !important;
+  }
+  .particles {
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.2;
+  }
+  .phrase {
+    font-size: 16px;
+    animation-duration: 2s;
+  }
+}
+
+@media (max-width: 480px) {
+  .particles {
+    text-align: center;
+    font-size: 18px !important;
+    line-height: 1;
+    margin: 15px auto;
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .phrase {
+    font-size: 18px !important;
+    line-height: 1;
+    margin: 15px auto;
+    animation-duration: 2s;
+  }
+}
+
+@media (max-width: 390px) {
+  .particles {
+    font-size: 8px;
+    line-height: 1;
+    margin: 10px auto;
+  }
+  .phrase {
+    font-size: 8px;
+    animation-duration: 2.5s;
+  }
+}
