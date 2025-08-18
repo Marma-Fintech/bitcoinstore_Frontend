@@ -54,7 +54,7 @@ const Home = ({ goToSection, goToContact }) => {
               <b>ROME</b> was Not Built in a day, But history can be made
               overnight. It took <b>11,000</b> years of trade before{" "}
               <tt>BITCOIN</tt> was invented. It took us just <tt>15 YEARS</tt>{" "}
-              to embark on creating <tt>Historyyyyy.</tt>
+              to embark on creating <tt>History.</tt>
             </p>
           }
           direction="up"
