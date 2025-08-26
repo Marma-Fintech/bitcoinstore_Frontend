@@ -51,10 +51,10 @@ const Home = ({ goToSection, goToContact }) => {
         <FadeImage
           text={
             <p className="title z-0 ">
-              <b>ROME</b> was Not Built in a day, But history can be made
+              <b>ROME</b> was not built in a day, but history can be made
               overnight. It took <b>11,000</b> years of trade before{" "}
               <tt>BITCOIN</tt> was invented. It took us just <tt>15 YEARS</tt>{" "}
-              to embark on creating <tt>History.</tt>
+              to embark on creating <tt>HISTORY.</tt>
             </p>
           }
           direction="up"

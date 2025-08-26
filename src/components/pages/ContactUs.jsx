@@ -128,7 +128,7 @@ export default function ContactUs({ goToContact }) {
           <FadeImage
             text={
               <p className="mb-4  text-sm  uppercase">
-                Coming soon to your city
+                Coming soon to your city..!
               </p>
             }
             direction="up"

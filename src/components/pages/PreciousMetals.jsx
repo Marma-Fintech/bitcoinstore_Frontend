@@ -70,7 +70,7 @@ function PreciousMetals({ goToContact }) {
               <span className="phrase">currency, </span>
               <span className="phrase">initially in the </span>
               <span className="phrase">form of small, </span>
-              <span className="phrase">shiny objects-bronze, </span>
+              <span className="phrase">shiny objects - bronze, </span>
               <span className="phrase">silver,</span>
               <span className="phrase"> and gold.</span>
             </p>
